@@ -1,0 +1,33 @@
+/* .hero {
+    margin: 0 auto;
+    border-radius: 12px;
+    background-image: url("../public/image/hero1.jpg");
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    text-align: center;
+    background-position: center;
+    position: relative;
+  }
+  
+  .hero__inner {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    position: absolute;
+    inset: 0;
+  }
+  
+  .hero__title {
+    margin-top: 0;
+    color: #fff;
+    font-weight: 500;
+    font-size: 5em;
+    font-family: 'Oswald', sans-serif;
+  }
+   */
