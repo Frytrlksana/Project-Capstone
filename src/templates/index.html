@@ -3,18 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Builder.io</title>
+    <title>Builder.co</title>
+    <link rel="icon" href="./favicon.png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
   </head>
-  <body>
+  <body style="background-color:#FFFEF8;">
     
     <nav class="navbar fixed-top navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand" href="#">
             <div class="logo-container">
-              <img src="logo/logo1.png" alt="Builder.io Logo" width="75" height="75" class="d-inline-block align-top">
+              <img src="logo/logo1.png" alt="Builder.co Logo" width="75" height="75" class="d-inline-block align-top">
               <div>
-                Builder.io<br>
+                Builder.co<br>
                 <span class="brand-subtext">Kualitas Terjamin</span>
               </div>
             </div>
@@ -25,8 +27,8 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="#">Beranda</a>
-              <a class="nav-link" href="#">Tentang Kami</a>
-              <a class="nav-link" href="#">Hubungi Kami</a>
+              <a class="nav-link" href="#about">Tentang Kami</a>
+              <a class="nav-link" href="#contact">Hubungi Kami</a>
             </div>
           </div>
         </div>
@@ -43,7 +45,7 @@
         align-items: center;
         font-family: 'Poppins', sans-serif;
         font-weight: bold;
-        color: #3483A5;
+        color: #65A0E4;
     }
 
     .logo-container {
@@ -96,6 +98,21 @@
         font-weight: bold;
     }
 
+    .tentangkami {
+        margin-top: 56px;
+        background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(image/hero1.png);
+        background-size: cover;
+        color: #fbfbfb;
+        text-align: center;
+        padding: 100px 0;
+    }
+
+    .tentangkami h1.display-3,
+    .tentangkami p.deskripsi {
+        font-family: 'Lily Script One';
+        font-weight: bold;
+    }
+
     .btn {
         border-radius: 30px;
         background-color: transparent;
@@ -124,8 +141,9 @@
       </div>
     </div>
 
+<div class="main-card-container">
+  <div class="main-card">
     <h1 class="display-5"> Layanan Kami </h1>
-    
     <div class="container">
       <div class="row">
         <div class="col-md-4">
@@ -146,7 +164,7 @@
             </div>
           </div>
         </div>
-        
+      
         <div class="col-md-4">
           <div class="card" aria-hidden="true">
             <img src="..." class="card-img-top" alt="...">
@@ -184,6 +202,242 @@
             </div>
           </div>
     </div>
+  </div>
+</div>
+
+   <!--about-->
+   <section id="about">
+    <div class="about">
+      <div class="container">
+        <div class="row justify-content-center mb-3 text-center">
+          <div class="col">
+            <h1>Tentang <span style="color: #65A0E4;font-style: 'Lily Script One';font-weight: bold;">Builder.co</span></h1>
+          </div>
+        </div>
+        <div class="row justify-content-center fs-6 text-center">
+          <div class="col">
+            <p>Builder.co adalah aplikasi pemesanan tukang secara online dengan</p>
+            <p>berbagai jenis keahlian tukang  dengan standar profesional dan terpercaya</p>
+            <h2>Butuh kualitas tukang yang terjamin? <span style="color: #65A0E4;font-weight: bold;">Builder.co</span> solusinya</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="service">
+      <div class="row justify-content-between" style="margin-left: 10px; margin-right: 50px;padding: 40px;">
+        <div class="col-6" style="padding: 80px;">
+          <p>Dalam bidang home service, <span style="color: #65A0E4;font-weight: bold;">Builder.co</span>  hadir sebagai penghubung penyedia jasa layanan dengan konsumen. Dengan memperkokoh sistem aplikasi layanan berbasis online yang efektif, pencarian para tukang, dan jasa-jasa lainnya akan menjadi mudah.</p>
+        </div>
+        <div class="col-2 text-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16" style="color: #65A0E4;">
+            <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+          </svg>
+          <p>JASA LAYANAN</p>
+          <p>membantu Anda menemukan penyedia jasa di sekitar Anda dengan beragam layanan yang tersedia, sehingga lebih efisien, cepat, dan ekonomis.</p>
+        </div>
+        <div class="col-2 text-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-card-checklist" viewBox="0 0 16 16" style="color:#65A0E4">
+            <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+            <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0M7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0"/>
+          </svg>
+          <p>PEMESANAN</p>
+          <p>Anda bisa fleksibel dalam memesan layanan, baik dengan segera atau menyesuaikan jadwal sesuai ketersediaan waktu Anda.</p>
+        </div>
+        <div class="col-2 text-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-credit-card-2-back-fill" viewBox="0 0 16 16" style="color: #65A0E4;">
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5H0zm11.5 1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM0 11v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1z"/>
+          </svg>
+          <p>PEMBAYARAN</p>
+          <p>Anda memiliki tiga opsi metode pembayaran, yaitu Virtual Account, <span style="color: #65A0E4;font-weight: bold;">Builder.co</span> poin, dan kartu kredit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .about{
+      background-image:url(image/background1.jpg);
+      background-size: cover;
+      height: 45vh;
+      width: 100%;
+      margin-top: 20px;
+    } 
+    
+    .col h1{
+      margin-top: 20px;
+      font-family:'Lily Script One';
+      font-weight: bold;
+      margin-bottom: 3%;
+    }
+    .col p{
+      font-family: 'Poppins', sans-serif;
+      font-weight: bold;
+      margin:auto;
+    }
+
+    .col h2{
+      margin-top: 20px;
+      font-family:'Poppins', sans-serif;
+      font-weight: bold;
+      margin-top: 5%;
+      font-size: medium;
+    }
+
+    .service{
+      font-family: 'Poppins', sans-serif;
+      font-weight: bold;
+      color: #ffffff;
+      background-color: #7B7B7B;
+      background-size: cover;
+      height: 80vh;
+    }
+  </style>
+
+<!--Contact-->
+<section id="contact">
+  <div class="container-contact">
+    <div class="row">
+      <div class="col">
+        <h1 style="text-align: left; margin-left: 70px; margin-top: 50px;">Hubungi Kami!</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="paragraf">
+        <p>Sobat <span style="color: #3483A5;">Builder.co</span>, jangan sungkan untuk hubungi kami jika ada yang ingin ditanyakan</p>
+        <p>Kami selalu siap setiap saat untuk membantu</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col fw-bold">
+        <div class="info">
+        <p>Mataram, Nusa Tenggara Barat, Indonesia</p>
+        <p>Customer Service: +62 823 4003</p>
+        </div>
+      </div>
+    </div>
+    <div class="row text-center mb-3">
+      <div class="col" style="font-family: 'Poppins', sans-serif;">
+        <h2 style="padding-top: 20px;font-size: 30px;">Tim <span style="color: #3483A5;">Builder.co</span></h2>
+        <p style="color: rgb(124, 119, 119);">Hubungi tim kami jika ada pertanyaan dan kerjasama</p>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px;margin-right: 100px;justify-content: center;">
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <img src="profile/tyok.jpg" class="card-img-top" alt="Profile1" style="width: 300px; height: 450px;justify-content: center;">
+          <div class="card-body">
+            <h5 class="card-title">Prasetyo Fajar Islam</h5>
+          </div>
+          <div class="card-body">
+            <a href="#" class="card-link"><i class="bi bi-whatsapp" style="color: #3483A5;"></i></a>
+            <a href="#" class="card-link"><i class="bi bi-instagram" style="color: #3483A5;"></i></a>
+            <a href="#" class="card-link"><i class="bi bi-linkedin" style="color: #3483A5;"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <img src="profile/ayu.jpg" class="card-img-top" alt="Profile2">
+          <div class="card-body">
+            <h5 class="card-title">Ananda Ayu Puspitaningrum</h5>
+          </div>
+          <div class="card-body">
+            <a href="#" class="card-link"><i class="bi bi-whatsapp" style="color: #3483A5;"></i></a>
+            <a href="#" class="card-link"><i class="bi bi-instagram" style="color: #3483A5;"></i></a>
+            <a href="#" class="card-link"><i class="bi bi-linkedin" style="color: #3483A5;"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <img src="profile/haris.jpg" class="card-img-top" alt="Profile3">
+          <div class="card-body">
+            <h5 class="card-title">Haris Abdullah Fasha</h5>
+          </div>
+          <div class="card-body">
+            <a href="#" class="card-link"><i class="bi bi-whatsapp" style="color: #3483A5;"></i></a>
+            <a href="#" class="card-link"><i class="bi bi-instagram" style="color: #3483A5;"></i></a>
+            <a href="#" class="card-link"><i class="bi bi-linkedin" style="color: #3483A5;"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <img src="profile/ferry.jpg" class="card-img-top" alt="Profile4">
+          <div class="card-body">
+            <h5 class="card-title">Ferry Trilaksana Putra</h5>
+          </div>
+          <div class="card-body">
+            <a href="#" class="card-link"><i class="bi bi-whatsapp" style="color: #3483A5;"></i></a>
+            <a href="#" class="card-link"><i class="bi bi-instagram" style="color: #3483A5;"></i></a>
+            <a href="#" class="card-link"><i class="bi bi-linkedin" style="color: #3483A5;"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <img src="profile/lanang.jpg" class="card-img-top" alt="Profile5">
+          <div class="card-body">
+            <h5 class="card-title">Muh.Lanang Anggoro</h5>
+          </div>
+          <div class="card-body">
+            <a href="#" class="card-link"><i class="bi bi-whatsapp" style="color: #3483A5;"></i></a>
+            <a href="#" class="card-link"><i class="bi bi-instagram" style="color: #3483A5;"></i></a>
+            <a href="#" class="card-link"><i class="bi bi-linkedin" style="color: #3483A5;"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff9d1" fill-opacity="1" d="M0,160L48,144C96,128,192,96,288,117.3C384,139,480,213,576,240C672,267,768,245,864,234.7C960,224,1056,224,1152,202.7C1248,181,1344,139,1392,117.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+</section>
+  
+
+<style>
+  .paragraf{
+    margin-left: 70px;
+    margin-top: 50px;
+    color: rgb(95, 94, 94);
+  }
+  .info{
+    margin-left: 70px;
+    margin-top: 50px;
+    color: rgb(95, 94, 94);
+    font-size: 12px;
+    /* font-weight: bold; */
+  }
+  .card {
+    background-color: #FFF9D1;
+  }
+</style>
+
+  <!--footer-->
+  <footer class="">
+    <div class="credit credit-fluid">
+      <p>Created by <a href="">Builder.co</a> | &copy; 2023</p>
+    </div>
+  </footer>
+
+  <style>
+  footer {
+    background-color: #FFE7A0;
+    text-align: center;
+    padding: 0.5rem 0;
+    /*margin-top: 2rem;
+    width: 100%;*/
+  }
+  footer .credit{
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  footer .credit a{
+    color: #65A0E4;
+    font-weight: bold;
+  }
+  </style>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>

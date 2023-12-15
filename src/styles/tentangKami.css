@@ -1,4 +1,4 @@
-.jumbtrone-tentangkami {
+/*.jumbtrone-tentangkami {
     margin: auto;
     width: 80%;
     display: flex;
@@ -198,7 +198,7 @@
   
   @media (max-width: 425px) {
     .jumbtrone-tentangkami {
-      /* background-color: aqua; */
+      background-color: aqua; 
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -315,5 +315,5 @@
       background-position: -22px -42px;
       background-size: 150%;
     }
-  }
+  } */
   
