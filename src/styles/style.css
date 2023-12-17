@@ -1,33 +1,49 @@
-/* .hero {
-    margin: 0 auto;
-    border-radius: 12px;
-    background-image: url("../public/image/hero1.jpg");
-    background-size: cover;
-    height: 500px;
-    width: 100%;
-    text-align: center;
-    background-position: center;
-    position: relative;
+.card-img-top {
+  filter: brightness(50%);
+  position: relative; /* Position relative for the overlay to work */
+  }
+
+.card-img-top::before {
+  content: ""; /* Empty content for pseudo-element */
+  position: absolute; /* Position absolute to overlay on top of the image */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* Black background with 25% opacity */
+  z-index: 1; /* Place the overlay above the image */
+}
+
+.card-img-top img {
+  width: 100%; /* Ensure the image fills the container */
+  border-radius: 8px; /* Adjust border radius as needed */
+}
+
+.btn-detail {
+  background-color: rgba(0, 0, 0, 0.25);
+  color: #fff; /* Text color */
+  border: 1px solid #000; /* Border color */
+  border-radius: 25px; /* Border radius for rounded corners */
+  padding: 10px 20px; /* Adjust padding as needed */
+  display: inline-block; /* Display as inline-block to make it vertically elongated */
+  transition: background-color 0.3s ease; /* Smooth transition on background color change */
+}
+
+.btn-detail:hover {
+  background-color: rgba(0, 0, 0, 0.5); /* Darker background color on hover */
+}
+  .btn-booking {
+    margin-top: 2%;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: #fff; /* Text color */
+    border: 1px solid #000; /* Border color */
+    border-radius: 25px; /* Border radius for rounded corners */
+    padding: 10px 20px; /* Adjust padding as needed */
+    display: inline-block; /* Display as inline-block to make it vertically elongated */
+    transition: background-color 0.3s ease; /* Smooth transition on background color change */
   }
   
-  .hero__inner {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-    position: absolute;
-    inset: 0;
+  .btn-booking:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Darker background color on hover */
   }
   
-  .hero__title {
-    margin-top: 0;
-    color: #fff;
-    font-weight: 500;
-    font-size: 5em;
-    font-family: 'Oswald', sans-serif;
-  }
-   */

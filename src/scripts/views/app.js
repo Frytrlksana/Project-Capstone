@@ -1,30 +1,26 @@
-// import DrawerInitiator from '../utils/drawer-initiator';
-import UrlParser from '../routes/url-parser';
-import routes from '../routes/routes';
+document.addEventListener('DOMContentLoaded', () => {
+  // Ambil elemen ul untuk menampilkan data
+  const tukangList = document.getElementById('tukang-list');
 
-class App {
-  constructor({ button, drawer, content }) {
-    this._button = button;
-    this._drawer = drawer;
-    this._content = content;
-
-    // this._initialAppShell();
-  }
-
-  _initialAppShell() {
-    DrawerInitiator.init({
-      button: this._button,
-      drawer: this._drawer,
-      content: this._content,
-    });
-  }
-
-  async renderPage() {
-    const url = UrlParser.parseActiveUrlWithCombiner();
-    const page = routes[url];
-    this._content.innerHTML = await page.render();
-    await page.afterRender();
-  }
-}
-
-export default App;
+  // Panggil API
+  fetch('https://capstone-builderco.vercel.app/api/v1/tukang')
+      .then(response => response.json())
+      .then(data => {
+          // Loop melalui data dan tambahkan ke dalam elemen ul
+          data.forEach(jasa => {
+              const listItem = document.createElement('li');
+              listItem.innerHTML = `
+                  <strong>Jasa Pelayanan:</strong> ${jasa.jasa_pelayanan}<br>
+                  <strong>URL Gambar:</strong> ${jasa.url_gambar}<br>
+                  <strong>Rating:</strong> ${jasa.rating}<br>
+                  <strong>Kota:</strong> ${jasa.kota}<br>
+                  <strong>Alamat:</strong> ${jasa.alamat}<br>
+                  <strong>Deskripsi:</strong> ${jasa.deskripsi}
+              `;
+              tukangList.appendChild(listItem);
+          });
+      })
+      .catch(error => {
+          console.error('Error fetching data:', error);
+      });
+});

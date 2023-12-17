@@ -113,7 +113,7 @@
         font-weight: bold;
     }
 
-    .btn {
+    .btn-utama {
         border-radius: 30px;
         background-color: transparent;
         border: 2px solid #ffffff;
@@ -126,86 +126,50 @@
             
         }
 
-    .btn:hover {
+    .btn-utama:hover {
         background-color: #ffffff; 
         color: #000000; 
     }
-
     </style>
     
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <h1 class="display-4">Pesan Tukang Berkualitas dan Terpercaya</h1>
         <p class="lead">Hanya Disini !</p>
-        <button type="button" class="btn btn-secondary"> Booking Sekarang </button>
+        <button type="button" href="#usservice" class="btn-utama btn-secondary"> Booking Sekarang </button>
       </div>
     </div>
 
-<div class="main-card-container">
-  <div class="main-card">
-    <h1 class="display-5"> Layanan Kami </h1>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card" aria-hidden="true">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title placeholder-glow">
-                <span class="placeholder col-6"></span>
-              </h5>
-              <p class="card-text placeholder-glow">
-                <span class="placeholder col-7"></span>
-                <span class="placeholder col-4"></span>
-                <span class="placeholder col-4"></span>
-                <span class="placeholder col-6"></span>
-                <span class="placeholder col-8"></span>
-              </p>
-              <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+    <section id="usservice">
+      <div class="usservice">
+      <div class="main-card-container">
+        <div class="main-card">
+          <h1 class="display-5"> Layanan Kami </h1>
+          <div class="container-data">
+            <div class="row" id="tukang-list">
+              <script src="index.js"></script>
             </div>
           </div>
-        </div>
-      
-        <div class="col-md-4">
-          <div class="card" aria-hidden="true">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title placeholder-glow">
-                <span class="placeholder col-6"></span>
-              </h5>
-              <p class="card-text placeholder-glow">
-                <span class="placeholder col-7"></span>
-                <span class="placeholder col-4"></span>
-                <span class="placeholder col-4"></span>
-                <span class="placeholder col-6"></span>
-                <span class="placeholder col-8"></span>
-              </p>
-              <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="card" aria-hidden="true">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title placeholder-glow">
-                <span class="placeholder col-6"></span>
-              </h5>
-              <p class="card-text placeholder-glow">
-                <span class="placeholder col-7"></span>
-                <span class="placeholder col-4"></span>
-                <span class="placeholder col-4"></span>
-                <span class="placeholder col-6"></span>
-                <span class="placeholder col-8"></span>
-              </p>
-              <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
-            </div>
-          </div>
-    </div>
-  </div>
-</div>
+         </div>
+      </div>
+      </div>
 
    <!--about-->
+
+   <style>
+    .icon-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .icon {
+      width: 30px;
+      height: 30px;
+      margin-bottom: 10px;
+    }
+  </style>
+
    <section id="about">
     <div class="about">
       <div class="container">
@@ -230,28 +194,35 @@
           <p>Dalam bidang home service, <span style="color: #65A0E4;font-weight: bold;">Builder.co</span>  hadir sebagai penghubung penyedia jasa layanan dengan konsumen. Dengan memperkokoh sistem aplikasi layanan berbasis online yang efektif, pencarian para tukang, dan jasa-jasa lainnya akan menjadi mudah.</p>
         </div>
         <div class="col-2 text-center">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16" style="color: #65A0E4;">
-            <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
-          </svg>
-          <p>JASA LAYANAN</p>
-          <p>membantu Anda menemukan penyedia jasa di sekitar Anda dengan beragam layanan yang tersedia, sehingga lebih efisien, cepat, dan ekonomis.</p>
+          <div class="icon-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bell-fill icon" viewBox="0 0 16 16" style="color: #65A0E4;">
+              <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+            </svg>
+            <p>JASA LAYANAN</p>
+            <p>membantu Anda menemukan penyedia jasa di sekitar Anda dengan beragam layanan yang tersedia, sehingga lebih efisien, cepat, dan ekonomis.</p>
+          </div>
         </div>
+      
         <div class="col-2 text-center">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-card-checklist" viewBox="0 0 16 16" style="color:#65A0E4">
-            <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
-            <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0M7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0"/>
-          </svg>
-          <p>PEMESANAN</p>
-          <p>Anda bisa fleksibel dalam memesan layanan, baik dengan segera atau menyesuaikan jadwal sesuai ketersediaan waktu Anda.</p>
+          <div class="icon-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-card-checklist icon" viewBox="0 0 16 16" style="color:#65A0E4">
+              <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+              <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0M7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0"/>
+            </svg>
+            <p>PEMESANAN</p>
+            <p>Anda bisa fleksibel dalam memesan layanan, baik dengan segera atau menyesuaikan jadwal sesuai ketersediaan waktu Anda.</p>
+          </div>
         </div>
+      
         <div class="col-2 text-center">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-credit-card-2-back-fill" viewBox="0 0 16 16" style="color: #65A0E4;">
-            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5H0zm11.5 1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM0 11v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1z"/>
-          </svg>
-          <p>PEMBAYARAN</p>
-          <p>Anda memiliki tiga opsi metode pembayaran, yaitu Virtual Account, <span style="color: #65A0E4;font-weight: bold;">Builder.co</span> poin, dan kartu kredit.</p>
-        </div>
-      </div>
+          <div class="icon-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-credit-card-2-back-fill icon" viewBox="0 0 16 16" style="color: #65A0E4;">
+              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5H0zm11.5 1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM0 11v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1z"/>
+            </svg>
+            <p>PEMBAYARAN</p>
+            <p>Anda memiliki tiga opsi metode pembayaran, yaitu Virtual Account, <span style="color: #65A0E4;font-weight: bold;">Builder.co</span> poin, dan kartu kredit.</p>
+          </div>
+        </div>      
     </div>
   </section>
 
@@ -305,16 +276,16 @@
     <div class="row">
       <div class="col">
         <div class="paragraf">
-        <p>Sobat <span style="color: #3483A5;">Builder.co</span>, jangan sungkan untuk hubungi kami jika ada yang ingin ditanyakan</p>
-        <p>Kami selalu siap setiap saat untuk membantu</p>
+          <p>Sobat <span style="color: #3483A5;">Builder.co</span>, jangan sungkan untuk hubungi kami jika ada yang ingin ditanyakan</p>
+          <p>Kami selalu siap setiap saat untuk membantu</p>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col fw-bold">
         <div class="info">
-        <p>Mataram, Nusa Tenggara Barat, Indonesia</p>
-        <p>Customer Service: +62 823 4003</p>
+          <p>Mataram, Nusa Tenggara Barat, Indonesia</p>
+          <p>Customer Service: +62 823 4003</p>
         </div>
       </div>
     </div>
@@ -327,14 +298,14 @@
     <div class="row" style="margin-left: 100px;margin-right: 100px;justify-content: center;">
       <div class="col-md-4 mb-3">
         <div class="card">
-          <img src="profile/tyok.jpg" class="card-img-top" alt="Profile1" style="width: 300px; height: 450px;justify-content: center;">
+          <img src="profile/tyok.jpg" class="card-img-top" alt="Profile1">
           <div class="card-body">
             <h5 class="card-title">Prasetyo Fajar Islam</h5>
           </div>
           <div class="card-body">
-            <a href="#" class="card-link"><i class="bi bi-whatsapp" style="color: #3483A5;"></i></a>
-            <a href="#" class="card-link"><i class="bi bi-instagram" style="color: #3483A5;"></i></a>
-            <a href="#" class="card-link"><i class="bi bi-linkedin" style="color: #3483A5;"></i></a>
+            <a href="whatsapp://send?text=Hello&phone=+6282147354774" class="card-link"><i class="bi bi-whatsapp" style="color: #3483A5;"></i></a>
+            <a href="https://instagram.com/tyokkk06_?igshid=MzMyNGUyNmU2YQ==" class="card-link"><i class="bi bi-instagram" style="color: #3483A5;"></i></a>
+            <a href="https://www.linkedin.com/in/prasetyo-fajar-islam-190073250/" class="card-link"><i class="bi bi-linkedin" style="color: #3483A5;"></i></a>
           </div>
         </div>
       </div>
@@ -345,9 +316,9 @@
             <h5 class="card-title">Ananda Ayu Puspitaningrum</h5>
           </div>
           <div class="card-body">
-            <a href="#" class="card-link"><i class="bi bi-whatsapp" style="color: #3483A5;"></i></a>
-            <a href="#" class="card-link"><i class="bi bi-instagram" style="color: #3483A5;"></i></a>
-            <a href="#" class="card-link"><i class="bi bi-linkedin" style="color: #3483A5;"></i></a>
+            <a href="whatsapp://send?text=Hello&phone=+6289653162636" class="card-link"><i class="bi bi-whatsapp" style="color: #3483A5;"></i></a>
+            <a href="http://instagram.com/ananda.app" class="card-link"><i class="bi bi-instagram" style="color: #3483A5;"></i></a>
+            <a href="http://linkedin.com/in/anandaayp" class="card-link"><i class="bi bi-linkedin" style="color: #3483A5;"></i></a>
           </div>
         </div>
       </div>
@@ -358,9 +329,9 @@
             <h5 class="card-title">Haris Abdullah Fasha</h5>
           </div>
           <div class="card-body">
-            <a href="#" class="card-link"><i class="bi bi-whatsapp" style="color: #3483A5;"></i></a>
-            <a href="#" class="card-link"><i class="bi bi-instagram" style="color: #3483A5;"></i></a>
-            <a href="#" class="card-link"><i class="bi bi-linkedin" style="color: #3483A5;"></i></a>
+            <a href="whatsapp://send?text=Hello&phone=+6281246640170" class="card-link"><i class="bi bi-whatsapp" style="color: #3483A5;"></i></a>
+            <a href="https://www.instagram.com/harisfasha?igshid=YzVkODRmOTdmMw==" class="card-link"><i class="bi bi-instagram" style="color: #3483A5;"></i></a>
+            <a href="http://linkedin.com/in/haris-abdullah-fasha-60668a272" class="card-link"><i class="bi bi-linkedin" style="color: #3483A5;"></i></a>
           </div>
         </div>
       </div>
@@ -371,9 +342,9 @@
             <h5 class="card-title">Ferry Trilaksana Putra</h5>
           </div>
           <div class="card-body">
-            <a href="#" class="card-link"><i class="bi bi-whatsapp" style="color: #3483A5;"></i></a>
-            <a href="#" class="card-link"><i class="bi bi-instagram" style="color: #3483A5;"></i></a>
-            <a href="#" class="card-link"><i class="bi bi-linkedin" style="color: #3483A5;"></i></a>
+            <a href="whatsapp://send?text=Hello&phone=+6285231246250" class="card-link"><i class="bi bi-whatsapp" style="color: #3483A5;"></i></a>
+            <a href="http://instagram.com/frytrlksana_" class="card-link"><i class="bi bi-instagram" style="color: #3483A5;"></i></a>
+            <a href="https://www.linkedin.com/in/ferry-trilaksana-aa44b9219/" class="card-link"><i class="bi bi-linkedin" style="color: #3483A5;"></i></a>
           </div>
         </div>
       </div>
@@ -384,9 +355,9 @@
             <h5 class="card-title">Muh.Lanang Anggoro</h5>
           </div>
           <div class="card-body">
-            <a href="#" class="card-link"><i class="bi bi-whatsapp" style="color: #3483A5;"></i></a>
-            <a href="#" class="card-link"><i class="bi bi-instagram" style="color: #3483A5;"></i></a>
-            <a href="#" class="card-link"><i class="bi bi-linkedin" style="color: #3483A5;"></i></a>
+            <a href="whatsapp://send?text=Hello&phone=+6287765956339" class="card-link"><i class="bi bi-whatsapp" style="color: #3483A5;"></i></a>
+            <a href="https://www.instagram.com/lananganggoro?igshid=YzVkODRmOTdmMw==" class="card-link"><i class="bi bi-instagram" style="color: #3483A5;"></i></a>
+            <a href="https://www.linkedin.com/in/lanang-anggoro-1a877b26a/" class="card-link"><i class="bi bi-linkedin" style="color: #3483A5;"></i></a>
           </div>
         </div>
       </div>
@@ -412,6 +383,60 @@
   .card {
     background-color: #FFF9D1;
   }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .col-md-4 {
+    flex: 0 0 auto;
+    max-width: 33.33333%;
+  }
+
+  .card {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: 300px; /* Adjust the height as needed */
+    object-fit: cover;
+  }
+
+  .card-body {
+    margin-bottom: 10px;
+  }
+
+  .card-title {
+    margin-bottom: 0.75rem;
+  }
+
+  .card-link {
+    color: #3483A5;
+    margin: 0 5px;
+  }
+
+  svg {
+    display: block;
+    margin-top: -1px; /* Adjust this value to your liking */
+  }
+
+  @media (max-width: 980px) {
+  .row {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
 </style>
 
   <!--footer-->
@@ -438,7 +463,12 @@
     font-weight: bold;
   }
   </style>
-    
+
+    <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-U7UqDYzzl5+P1iMl2OmByWJ46btfE2p5uUAd9aD+xn9aI+BXQrmjrw/gW98v4MW" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>

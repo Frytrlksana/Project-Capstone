@@ -1,8 +1,14 @@
-import TentangKami from '../views/pages/tentangKami';
+const express = require('express');
+const router = express.Router();
 
-const routes = {
-  '/tentang-kami': TentangKami,
+// Route untuk menghandle detail berdasarkan ID
+router.get('/detail/:id', (req, res) => {
+    const id = req.params.id;
 
-};
+    // Logika untuk mendapatkan data berdasarkan ID
+    // Misalnya, mengambil data dari database atau sumber lain
+    // Untuk contoh, kita akan mengirim respons sederhana
+    res.send(`Detail untuk ID: ${id}`);
+});
 
-export default routes;
+module.exports = router;
