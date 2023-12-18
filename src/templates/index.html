@@ -10,32 +10,34 @@
   </head>
   <body style="background-color:#FFFEF8;">
     
-    <nav class="navbar fixed-top navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <div class="logo-container">
-              <img src="logo/logo1.png" alt="Builder.co Logo" width="75" height="75" class="d-inline-block align-top">
-              <div>
-                Builder.co<br>
-                <span class="brand-subtext">Kualitas Terjamin</span>
-              </div>
-            </div>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Beranda</a>
-              <a class="nav-link" href="#about">Tentang Kami</a>
-              <a class="nav-link" href="#contact">Hubungi Kami</a>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #FFE7A0;">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <div class="logo-container">
+            <img src="logo/logo1.png" alt="Builder.co Logo" width="75" height="75" class="d-inline-block align-top">
+            <div>
+              Builder.co<br>
+              <span class="brand-subtext">Kualitas Terjamin</span>
             </div>
           </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+            <a class="nav-link" href="#about">Tentang Kami</a>
+            <a class="nav-link" href="#contact">Hubungi Kami</a>
+          </div>
         </div>
-      </nav>
+      </div>
+    </nav>
       
     
     <style>
+      
+
     .navbar {
         background-color: #FFE7A0;
     }
@@ -123,7 +125,6 @@
         transition: background-color 0.3s, color 0.3s;
         font-family: 'Poppins', sans-serif; 
         font-weight: bold;
-            
         }
 
     .btn-utama:hover {
@@ -140,6 +141,45 @@
       </div>
     </div>
 
+    <style>
+    #usservice {
+  background-color: #f8f9fa; /* Add your desired background color */
+  padding: 50px 0; /* Add padding as needed */
+}
+
+.main-card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.main-card {
+  max-width: 1200px; /* Set the maximum width of the card */
+  width: 100%;
+  text-align: center;
+}
+
+.container-data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px; /* Add margin as needed */
+}
+
+.custom-card {
+  width: calc(33.33% - 20px); /* Adjust the width based on your design preferences */
+  margin-bottom: 20px; /* Add margin as needed */
+}
+
+/* Add additional styling for your card elements here */
+
+@media (max-width: 767px) {
+  .custom-card {
+    width: 100%; /* Make cards full width on smaller screens */
+  }
+}
+
+    </style>
+
     <section id="usservice">
       <div class="usservice">
       <div class="main-card-container">
@@ -153,6 +193,7 @@
          </div>
       </div>
       </div>
+    </section>
 
    <!--about-->
 
@@ -297,8 +338,8 @@
     </div>
     <div class="row" style="margin-left: 100px;margin-right: 100px;justify-content: center;">
       <div class="col-md-4 mb-3">
-        <div class="card">
-          <img src="profile/tyok.jpg" class="card-img-top" alt="Profile1">
+        <div class="card-contact">
+          <img src="profile/tyok.jpg" class="card-img-contact" alt="Profile1">
           <div class="card-body">
             <h5 class="card-title">Prasetyo Fajar Islam</h5>
           </div>
@@ -310,8 +351,8 @@
         </div>
       </div>
       <div class="col-md-4 mb-3">
-        <div class="card">
-          <img src="profile/ayu.jpg" class="card-img-top" alt="Profile2">
+        <div class="card-contact">
+          <img src="profile/ayu.jpg" class="card-img-contact" alt="Profile2">
           <div class="card-body">
             <h5 class="card-title">Ananda Ayu Puspitaningrum</h5>
           </div>
@@ -323,8 +364,8 @@
         </div>
       </div>
       <div class="col-md-4 mb-3">
-        <div class="card">
-          <img src="profile/haris.jpg" class="card-img-top" alt="Profile3">
+        <div class="card-contact">
+          <img src="profile/haris.jpg" class="card-img-contact" alt="Profile3">
           <div class="card-body">
             <h5 class="card-title">Haris Abdullah Fasha</h5>
           </div>
@@ -336,8 +377,8 @@
         </div>
       </div>
       <div class="col-md-4 mb-3">
-        <div class="card">
-          <img src="profile/ferry.jpg" class="card-img-top" alt="Profile4">
+        <div class="card-contact">
+          <img src="profile/ferry.jpg" class="card-img-contact" alt="Profile4">
           <div class="card-body">
             <h5 class="card-title">Ferry Trilaksana Putra</h5>
           </div>
@@ -349,8 +390,8 @@
         </div>
       </div>
       <div class="col-md-4 mb-3">
-        <div class="card">
-          <img src="profile/lanang.jpg" class="card-img-top" alt="Profile5">
+        <div class="card-contact">
+          <img src="profile/lanang.jpg" class="card-img-contact" alt="Profile5">
           <div class="card-body">
             <h5 class="card-title">Muh.Lanang Anggoro</h5>
           </div>
@@ -380,7 +421,7 @@
     font-size: 12px;
     /* font-weight: bold; */
   }
-  .card {
+  .card-contact {
     background-color: #FFF9D1;
   }
 
@@ -396,13 +437,13 @@
     max-width: 33.33333%;
   }
 
-  .card {
+  .card-contact {
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
 
-  .card-img-top {
+  .card-img-contact {
     width: 100%;
     height: 300px; /* Adjust the height as needed */
     object-fit: cover;
@@ -467,8 +508,5 @@
     <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-U7UqDYzzl5+P1iMl2OmByWJ46btfE2p5uUAd9aD+xn9aI+BXQrmjrw/gW98v4MW" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
